@@ -14,4 +14,4 @@ RUN python manage.py collectstatic
 
 EXPOSE 8000
 
-CMD ["bash", "-c","python manage.py migrate && gunicorn ground_water.wsgi --bind 0.0.0.0:8000"]
+CMD ["bash", "-c","python manage.py migrate && gunicorn groundwater.wsgi --bind 0.0.0.0:8000"]
